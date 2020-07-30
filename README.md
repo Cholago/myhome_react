@@ -14,3 +14,12 @@
 run the project `yarn start`
 
 >Always after greatness Cheers
+
+### Screenshots
+
+*Login*
+![Login](/screenshots/Screenshot from 2020-07-30 14-14-38.png)
+*Register*
+![Register](/screenshots/Screenshot from 2020-07-30 14-15-04.png)
+*Forgot password*
+![Forgot password](/screenshots/Screenshot from 2020-07-30 14-16-25.png)

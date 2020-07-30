@@ -66,62 +66,7 @@ export default function Homepage() {
                             }
                         />
                     </div>
-                    <Card>
-                        <CardHeader color="primary" className={classes.cardHeader}>
-                            <h4>Login</h4>
-                        </CardHeader>
-                        <CardBody>
-                            <CustomInput
-                                labelText="First Name..."
-                                id="first"
-                                formControlProps={{
-                                    fullWidth: true
-                                }}
-                                inputProps={{
-                                    type: "text",
-                                    endAdornment: (
-                                        <InputAdornment position="end">
-                                            <People className={classes.inputIconsColor} />
-                                        </InputAdornment>
-                                    )
-                                }}
-                            />
-                            <CustomInput
-                                labelText="Email..."
-                                id="email"
-                                formControlProps={{
-                                    fullWidth: true
-                                }}
-                                inputProps={{
-                                    type: "email",
-                                    endAdornment: (
-                                        <InputAdornment position="end">
-                                            <Email className={classes.inputIconsColor} />
-                                        </InputAdornment>
-                                    )
-                                }}
-                            />
-                            <CustomInput
-                                labelText="Password"
-                                id="pass"
-                                formControlProps={{
-                                    fullWidth: true
-                                }}
-                                inputProps={{
-                                    type: "password",
-                                    endAdornment: (
-                                        <InputAdornment position="end">
-                                            <Icon className={classes.inputIconsColor}>
-                                                lock_outline
-                            </Icon>
-                                        </InputAdornment>
-                                    ),
-                                    autoComplete: "off"
-                                }}
-                            />
-                        </CardBody>
 
-                    </Card>
                     <Footer />
                 </GridItem>
             </GridContainer>
