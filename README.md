@@ -18,8 +18,8 @@ run the project `yarn start`
 ### Screenshots
 
 *Login*
-![Login](/screenshots/Screenshot from 2020-07-30 14-14-38.png)
+![Login](/screenshots/Screenshotfrom2020-07-3014-14-38.png)
 *Register*
-![Register](/screenshots/Screenshot from 2020-07-30 14-15-04.png)
+![Register](/screenshots/Screenshotfrom2020-07-3014-15-04.png)
 *Forgot password*
-![Forgot password](/screenshots/Screenshot from 2020-07-30 14-16-25.png)
+![Forgot password](/screenshots/Screenshotfrom2020-07-3014-16-25.png)

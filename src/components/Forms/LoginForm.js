@@ -12,6 +12,8 @@ import CardFooter from "components/Card/CardFooter.js";
 import TextField from '@material-ui/core/TextField';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Swal from 'sweetalert2'
+//redirecting
+import { Redirect } from "react-router-dom";
 
 const validEmailRegex = RegExp(/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/);
 export default class LoginForm extends React.Component {
@@ -29,7 +31,8 @@ export default class LoginForm extends React.Component {
             },
             loading: false,
             buttonDisabled: true,
-            buttonText: "Login"
+            buttonText: "Login",
+            redirect: false
         };
     }
 
@@ -120,12 +123,14 @@ export default class LoginForm extends React.Component {
             const data = this.state.data;
             data.email = "";
             data.password = "";
-            this.setState({ buttonText: "Login", loading: false, data, email: "", data, password: "" });
+            this.setState({ buttonText: "Login", loading: false, redirect: true, data, email: "", data, password: "" });
+            /*
             Swal.fire(
                 'Successfull!',
                 'Account not found.',
                 'success'
             )
+            */
         }, 2000);
     }
 
@@ -187,6 +192,9 @@ export default class LoginForm extends React.Component {
         };
 
         const { data, errors } = this.state;
+        if (this.state.redirect) {
+            return <Redirect to={"/main"} />;
+        }
         return (
             <form style={classes.form} onSubmit={this.mySubmitHandler}>
                 <CardHeader color="info" style={classes.cardHeader}>
